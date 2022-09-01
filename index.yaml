@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  policy-controller:
+  - annotations:
+      artifacthub.io/images: |
+        - name: policy-controller
+          image: ghcr.io/sigstore/policy-controller/policy-controller:v0.2.1@sha256:9b8fe4bcc058de060294f7ccb375c288010cd5e36cc3938393baef3c893d0106
+        - name: policywebhook
+          image: ghcr.io/sigstore/policy-controller/policy-webhook:v0.2.1@sha256:2d8ec2534e903a722a89efd6fe04a52a8a420ca3f8be1703aa697bf5faf418eb
+      artifacthub.io/license: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.2.1
+    created: "2022-09-01T14:38:10.314774-05:00"
+    description: The Helm chart for Policy  Controller
+    digest: 21a70dae48b94326cda9a89e7db5b54a661faa7a361aee693a39b86697df91d0
+    home: https://github.com/sigstore/policy-controller
+    maintainers:
+    - name: dlorenc
+    - name: hectorj2f
+    name: policy-controller
+    sources:
+    - https://github.com/sigstore/policy-controller
+    type: application
+    urls:
+    - https://github.com/oscarbetancurj/helm-chart/policy-controller-0.2.1.tgz
+    version: 0.2.1
+generated: "2022-09-01T14:38:10.312909-05:00"
